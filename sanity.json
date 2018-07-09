@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "project": {
+    "name": "c4coin-cms"
+  },
+  "api": {
+    "projectId": "eafm4k3a",
+    "dataset": "public"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}
