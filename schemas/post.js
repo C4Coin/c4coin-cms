@@ -18,10 +18,16 @@ export default {
       }
     },
     {
+      name: 'weight',
+      title: 'Weight',
+      type: 'number',
+      description: 'May be used in determining which post appears first'
+    },
+    {
       name: 'author',
       title: 'Author',
       type: 'reference',
-      to: {type: 'author'}
+      to: {type: 'member'}
     },
     {
       name: 'mainImage',
@@ -32,15 +38,9 @@ export default {
       }
     },
     {
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}]
-    },
-    {
       name: 'publishedAt',
       title: 'Published at',
-      type: 'datetime'
+      type: 'date'
     },
     {
       name: 'body',
